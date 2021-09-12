@@ -87,7 +87,7 @@ public class FullScreenActivity extends YouTubeBaseActivity {
         share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String link = "https://www.youtube.com/watch?v" + youtubeModel.getYoutube_url();
+                String link = "https://www.youtube.com/watch?v=" + youtubeModel.getYoutube_url();
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.putExtra(Intent.EXTRA_TEXT, link+"\n");
                 intent.setType("text/plain");
